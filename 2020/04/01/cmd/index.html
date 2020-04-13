@@ -1,0 +1,459 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>cmd | Gnail</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">cmd</h1><a id="logo" href="/.">Gnail</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">cmd</h1><div class="post-meta">2020-04-01<span> | </span><span class="category"><a href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="post-content"><hr>
+<a id="more"></a>
+<h1 id="显示无线密码"><a href="#显示无线密码" class="headerlink" title="显示无线密码"></a>显示无线密码</h1><p>1：cd/<br>2：netsh<br>3：wlan show profile<br>4:wlan show profile xxx key=clear</p>
+<p><a href="https://drive.google.com/file/d/1Ij5HyAi36v8N7gfyTu4kSupnkZjL5TsC/view" target="_blank" rel="noopener">下载右键第二行打开显示wifi密码</a></p>
+<h1 id="获取有关计算机的所有信息"><a href="#获取有关计算机的所有信息" class="headerlink" title="获取有关计算机的所有信息"></a>获取有关计算机的所有信息</h1><p>cmd依次输入</p>
+<ul>
+<li>Mainboard baseboard list brief</li>
+<li>CPU  cpu get name</li>
+<li>RAM  MEMORYCHIP get BankLabel, DeviceLocator, Capacity, Speed</li>
+<li>OS  os get Caption,OSArchitecture</li>
+<li>HDD  diskdrive get model,size<br>logicaldisk get name,Size</li>
+<li>Sound  sounddev get Caption  </li>
+<li>Software product get name</li>
+<li>Video  path win32_VideoController get name </li>
+<li>NIC  nic get caption</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=9q2pLLpsHiY" target="_blank" rel="noopener">参考</a>  <a href="https://www.youtube.com/channel/UCCl11_iYjid0YrT7d8DF3-w/videos" target="_blank" rel="noopener">大佬</a></p>
+<h1 id="开始—运行-cmd-命令大全"><a href="#开始—运行-cmd-命令大全" class="headerlink" title="开始—运行(cmd)命令大全"></a>开始—运行(cmd)命令大全</h1><p>gpedit.msc—–组策略</p>
+<p>sndrec32——-录音机</p>
+<p>Nslookup——-IP地址侦测器　</p>
+<p>explorer——-打开资源管理器</p>
+<p>logoff———注销命令</p>
+<p>tsshutdn——-60秒倒计时关机命令</p>
+<p>lusrmgr.msc—-本机用户和组</p>
+<p>services.msc—本地服务设置</p>
+<p>oobe/msoobe /a—-检查XP是否激活</p>
+<p>notepad——–打开记事本</p>
+<p>cleanmgr——-垃圾整理</p>
+<p>net start messenger—-开始信使服务</p>
+<p>compmgmt.msc—计算机管理</p>
+<p>net stop messenger—–停止信使服务</p>
+<p>conf———–启动netmeeting</p>
+<p>dvdplay——–DVD播放器</p>
+<p>charmap——–启动字符映射表</p>
+<p>diskmgmt.msc—磁盘管理实用程序</p>
+<p>calc———–启动计算器</p>
+<p>dfrg.msc——-磁盘碎片整理程序</p>
+<p>chkdsk.exe—–Chkdsk磁盘检查　</p>
+<p>devmgmt.msc— 设备管理器</p>
+<p>regsvr32 /u *.dll—-停止dll文件运行</p>
+<p>drwtsn32—— 系统医生</p>
+<p>rononce -p —-15秒关机</p>
+<p>dxdiag———检查DirectX信息</p>
+<p>regedt32——-注册表编辑器</p>
+<p>Msconfig.exe—系统配置实用程序</p>
+<p>rsop.msc——-组策略结果集</p>
+<p>mem.exe——–显示内存使用情况</p>
+<p>regedit.exe—-注册表</p>
+<p>winchat——–XP自带局域网聊天</p>
+<p>progman——–程序管理器</p>
+<p>winmsd———系统信息</p>
+<p>perfmon.msc—-计算机性能监测程序</p>
+<p>winver———检查Windows版本</p>
+<p>sfc /scannow—–扫描错误并复原</p>
+<p>winipcfg——-IP配置</p>
+<p>taskmgr—–任务管理器（2000／xp／2003）</p>
+<p>command——–cmd</p>
+<p>fsmgmt.msc 共享文件夹</p>
+<p>netstat -an—-查看端口</p>
+<p>osk 屏幕键盘</p>
+<p>install.asp—-修改注册网页</p>
+<p>eventvwr.msc 时间查看器</p>
+<p>secpol.msc 本地安全设置</p>
+<p>services.msc 服务</p>
+<p>2K</p>
+<p>accwiz.exe &gt; 辅助工具向导</p>
+<p>acsetups.exe &gt; acs setup dcom server executable</p>
+<p>actmovie.exe &gt; 直接显示安装工具</p>
+<p>append.exe &gt; 允许程序打开制定目录中的数据</p>
+<p>arp.exe &gt; 显示和更改计算机的ip与硬件物理地址的对应列表</p>
+<p>at.exe &gt; 计划运行任务</p>
+<p>atmadm.exe &gt; 调用管理器统计</p>
+<p>attrib.exe &gt; 显示和更改文件和文件夹属性</p>
+<p>autochk.exe &gt; 检测修复文件系统</p>
+<p>autoconv.exe &gt; 在启动过程中自动转化系统</p>
+<p>autofmt.exe &gt; 在启动过程中格式化进程</p>
+<p>autolfn.exe &gt; 使用长文件名格式</p>
+<p>bootok.exe &gt; boot acceptance application for registry</p>
+<p>bootvrfy.exe &gt; 通报启动成功</p>
+<p>cacls.exe &gt; 显示和编辑acl</p>
+<p>calc.exe &gt; 计算器</p>
+<p>cdplayer.exe &gt; cd播放器</p>
+<p>change.exe &gt; 与终端服务器相关的查询</p>
+<p>charmap.exe &gt; 字符映射表</p>
+<p>chglogon.exe &gt; 启动或停用会话记录</p>
+<p>chgport.exe &gt; 改变端口（终端服务）</p>
+<p>chgusr.exe &gt; 改变用户（终端服务）</p>
+<p>chkdsk.exe &gt; 磁盘检测程序</p>
+<p>chkntfs.exe &gt; 磁盘检测程序</p>
+<p>cidaemon.exe &gt; 组成ci文档服务</p>
+<p>cipher.exe &gt; 在ntfs上显示或改变加密的文件或目录</p>
+<p>cisvc.exe &gt; 索引内容</p>
+<p>ckcnv.exe &gt; 变换cookie</p>
+<p>cleanmgr.exe &gt; 磁盘清理</p>
+<p>cliconfg.exe &gt; sql客户网络工具</p>
+<p>clipbrd.exe &gt; 剪贴簿查看器</p>
+<p>clipsrv.exe &gt; 运行clipboard服务</p>
+<p>clspack.exe &gt; 建立系统文件列表清单</p>
+<p>cluster.exe &gt; 显示域的集群</p>
+<p><em>cmd</em>.exe &gt; 没什么好说的！</p>
+<p>cmdl32.exe &gt; 自动下载连接管理</p>
+<p>cmmgr32.exe &gt; 连接管理器</p>
+<p>cmmon32.exe &gt; 连接管理器监视</p>
+<p>cmstp.exe &gt; 连接管理器配置文件安装程序</p>
+<p>comclust.exe &gt; 集群</p>
+<p>comp.exe &gt; 比较两个文件和文件集的内容＊</p>
+<p>compact.exe &gt; 显示或改变ntfs分区上文件的压缩状态</p>
+<p>conime.exe &gt; ime控制台</p>
+<p>control.exe &gt; 控制面板</p>
+<p>convert.exe &gt; 转换文件系统到ntfs</p>
+<p>convlog.exe &gt; 转换iis日志文件格式到ncsa格式</p>
+<p>cprofile.exe &gt; 转换显示模式</p>
+<p>c.exe &gt; 较本宿主版本</p>
+<p>csrss.exe &gt; 客户服务器runtime进程</p>
+<p>csvde.exe &gt; 日至格式转换程序</p>
+<p>dbgtrace.exe &gt; 和terminal server相关</p>
+<p>dcomcnfg.exe &gt; dcom配置属性</p>
+<p>dcphelp.exe &gt; ?</p>
+<p>dcpromo.exe &gt; ad安装向导</p>
+<p>ddeshare.exe &gt; dde共享</p>
+<p>ddmprxy.exe &gt;</p>
+<p>debug.exe &gt; 就是debug啦！</p>
+<p>dfrgfat.exe &gt; fat分区磁盘碎片整理程序</p>
+<p>dfrgntfs.exe &gt; ntfs分区磁盘碎片整理程序</p>
+<p>dfs_cmd_.exe &gt; 配置一个dfs树</p>
+<p>dfsinit.exe &gt; 分布式文件系统初始化</p>
+<p>dfssvc.exe &gt; 分布式文件系统服务器</p>
+<p>diantz.exe &gt; 制作cab文件</p>
+<p>diskperf.exe &gt; 磁盘性能计数器</p>
+<p>dllhost.exe &gt; 所有com+应用软件的主进程</p>
+<p>dllhst3g.exe &gt;</p>
+<p>dmadmin.exe &gt; 磁盘管理服务</p>
+<p>dmremote.exe &gt; 磁盘管理服务的一部分</p>
+<p>dns.exe</p>
+<blockquote>
+<p>dns applications dns</p>
+</blockquote>
+<p>doskey.exe &gt; 命令行创建宏</p>
+<p>dosx.exe &gt; dos扩展</p>
+<p>dplaysvr.exe &gt; 直接运行帮助</p>
+<p>drwatson.exe &gt; 华生医生错误检测</p>
+<p>drwtsn32.exe &gt; 华生医生显示和配置管理</p>
+<p>dtcsetup.exe &gt; installs mdtc</p>
+<p>dvdplay.exe &gt; dvd播放</p>
+<p>dxdiag.exe &gt; direct-x诊断工具</p>
+<p>edlin.exe &gt; 命令行的文本编辑器（历史悠久啊！）</p>
+<p>edlin.exe &gt; 命令行的文本编辑器（历史悠久啊！）</p>
+<p>esentutl.exe &gt; ms数据库工具</p>
+<p>eudcedit.exe &gt; type造字程序</p>
+<p>eventvwr.exe &gt; 事件查看器</p>
+<p>evnt_cmd_.exe &gt; event to trap translator; configuration tool</p>
+<p>evntwin.exe &gt; event to trap translator setup</p>
+<p>exe2bin.exe &gt; 转换exe文件到二进制</p>
+<p>expand.exe &gt; 解压缩</p>
+<p>extrac32.exe &gt; 解cab工具</p>
+<p>fastopen.exe &gt; 快速访问在内存中的硬盘文件</p>
+<p>faxcover.exe &gt; 传真封面编辑</p>
+<p>faxqueue.exe &gt; 显示传真队列</p>
+<p>faxsend.exe &gt; 发送传真向导</p>
+<p>faxsvc.exe &gt; 启动传真服务</p>
+<p>fc.exe &gt; 比较两个文件的不同</p>
+<p>find.exe &gt; 查找文件中的文本行</p>
+<p>findstr.exe &gt; 查找文件中的行</p>
+<p>finger.exe &gt; 一个用户并显示出统计结果</p>
+<p>fixmapi.exe &gt; 修复mapi文件</p>
+<p>flattemp.exe &gt; 允许或者禁用临时文件目录</p>
+<p>fontview.exe &gt; 显示字体文件中的字体</p>
+<p>forcedos.exe &gt; forces a file to start in dos mode. 强制文件在dos模式下运行</p>
+<p>freecell.exe &gt; popular windows game 空当接龙</p>
+<p>ftp.exe &gt; file transfer protocol used to transfer files over a network conne</p>
+<p>ction 就是ftp了</p>
+<p>gdi.exe &gt; graphic device interface 图形界面驱动</p>
+<p>grovel.exe &gt;</p>
+<p>grpconv.exe &gt; program manager group convertor 转换程序管理员组</p>
+<p>help.exe &gt; displays help for windows 2000 commands 显示帮助</p>
+<p>hostname.exe &gt; display hostname for machine. 显示机器的hostname</p>
+<p>ie4uinit.exe &gt; ie5 user install tool ie5用户安装工具</p>
+<p>ieshwiz.exe &gt; customize folder wizard 自定义文件夹向导</p>
+<p>iexpress.exe &gt; create and setup packages for install 穿件安装包</p>
+<p>iisreset.exe &gt; restart iis admin service 重启iis服务</p>
+<p>internat.exe &gt; keyboard language indicator applet 键盘语言指示器</p>
+<p>ipconfig.exe &gt; windows 2000 ip configuration. 察看ip配置</p>
+<p>ipsecmon.exe &gt; ip security monitor ip安全监视器</p>
+<p>ipxroute.exe &gt; ipx routing and source routing control program ipx路由和源路由</p>
+<p>控制程序</p>
+<p>irftp.exe &gt; setup ftp for wireless communication 无线连接</p>
+<p>ismserv.exe &gt; intersite messaging service 安装或者删除service control manage</p>
+<p>r中的服务</p>
+<p>jdbgmgr.exe &gt; microsoft debugger for java 4 java4</p>
+<p>的调试器</p>
+<p>jetconv.exe &gt; convert a jet engine database 转换jet engine数据库</p>
+<p>jetpack.exe &gt; compact jet database. 压缩jet数据库</p>
+<p>jview.exe &gt; command-line loader for java java的命令行装载者</p>
+<p>krnl386.exe &gt; core component for windows 2000 2000的核心组件</p>
+<p>label.exe &gt; change label for drives 改变驱动器的卷标</p>
+<p>lcwiz.exe &gt; license compliance wizard for local or remote systems. 许可证符合</p>
+<p>向导</p>
+<p>ldifde.exe &gt; ldif cmd line manager ldif目录交换命令行管理</p>
+<p>licmgr.exe &gt; terminal server license manager 终端服务许可协议管理</p>
+<p>lights.exe &gt; display connection status lights 显示连接状况</p>
+<p>llsmgr.exe &gt; windows 2000 license manager 2000许可协议管理</p>
+<p>llssrv.exe &gt; start the license server 启动许可协议服务器</p>
+<p>lnkstub.exe &gt;</p>
+<p>locator.exe &gt; rpc locator 远程定位</p>
+<p>lodctr.exe &gt; load perfmon counters 调用性能计数</p>
+<p>logoff.exe &gt; log current user off. 注销用户</p>
+<p>lpq.exe &gt; displays status of a remote lpd queue 显示远端的lpd打印队列的状态，</p>
+<p>显示被送到基于unix的服务器的打印任务</p>
+<p>lpr.exe &gt; send a print job to a network printer. 重定向打印任务到网络中的打印</p>
+<p>机。通常用于unix客户打印机将打印任务发送给连接了打印设备的nt的打印机服务器。</p>
+<p>lsass.exe &gt; lsa executable and server dll 运行lsa和server的dll</p>
+<p>lserver.exe &gt; specifies the new dns domain for the default server 指定默认se</p>
+<p>rver新的dns域</p>
+<p>os2.exe &gt; an os/2 warp server (os2 /o) os/2</p>
+<p>os2srv.exe &gt; an os/2 warp server os/2</p>
+<p>os2ss.exe &gt; an os/2 warp server os/2</p>
+<p>osk.exe &gt; on screen keyboard 屏幕键盘</p>
+<p>packager.exe &gt; windows 2000 packager manager 对象包装程序</p>
+<p>pathping.exe &gt; combination of ping and tracert 包含ping和tracert的程序</p>
+<p>pax.exe &gt; is a posix program and path names used as arguments must be specif</p>
+<p>ied in posix format. use “//c/users/default” instead of “c:usersdefault.”</p>
+<p>启动便携式存档互换 (pax) 实用程序</p>
+<p>pentnt.exe &gt; used to check the pentium for the floating point division error</p>
+<p>. 检查pentium的浮点错误</p>
+<p>perfmon.exe &gt; starts windows performance monitor 性能监视器</p>
+<p>ping.exe &gt; packet internet groper 验证与远程计算机的连接</p>
+<p>posix.exe &gt; used for backward compatibility with unix 用于兼容unix</p>
+<p>print.exe &gt; cmd line used to print files 打印文本文件或显示打印队列的内容。</p>
+<p>progman.exe &gt; program manager 程序管理器</p>
+<p>proquota.exe &gt; profile quota program</p>
+<p>psxss.exe &gt; posix subsystem application posix子系统应用程序</p>
+<p>qappsrv.exe &gt; displays the available applicati</p>
+<p>on terminal servers on the net</p>
+<p>work</p>
+<p>在网络上显示终端服务器可用的程序</p>
+<p>qprocess.exe &gt; display information about processes local or remote 在本地或远</p>
+<p>程显示进程的信息（需终端服务）</p>
+<p>query.exe &gt; query termserver user process and sessions 查询进程和对话</p>
+<p>quser.exe &gt; display information about a user logged on 显示用户登陆的信息（需</p>
+<p>终端服务）</p>
+<p>qwinsta.exe &gt; display information about terminal sessions. 显示终端服务的信息</p>
+<p>rasadmin.exe &gt; start the remote access admin service 启动远程访问服务</p>
+<p>rasautou.exe &gt; creates a ras connection 建立一个ras连接</p>
+<p>rasdial.exe &gt; dial a connection 拨号连接</p>
+<p>ras.exe &gt; starts a ras connection 运行ras连接</p>
+<p>rcp.exe &gt; copies a file from and to a rcp service. 在 windows 2000 计算机和运</p>
+<p>行远程外壳端口监控程序 rshd 的系统之间复制文件</p>
+<p>rdpclip.exe &gt; rdpclip allows you to copy and paste files between a terminal</p>
+<p>session and client console session. 再终端和本地复制和粘贴文件</p>
+<p>recover.exe &gt; recovers readable information from a bad or defective disk 从坏</p>
+<p>的或有缺陷的磁盘中恢复可读取的信息。</p>
+<p>redir.exe &gt; starts the redirector service 运行重定向服务</p>
+<p>regedt32.exe &gt; 32-bit register service 32位注册服务</p>
+<p>regini.exe &gt; modify registry permissions from within a 用脚本修改注册</p>
+<p>许可</p>
+<p>register.exe &gt; register a program so it can have special execution character</p>
+<p>istics. 注册包含特殊运行字符的程序</p>
+<p>regsvc.exe &gt;</p>
+<p>regsvr32.exe &gt; registers and unregister”s dll”s. as to how and where it regi</p>
+<p>ster”s them i dont know. 注册和反注册dll</p>
+<p>regtrace.exe &gt; options to tune debug options for applications failing to dum</p>
+<p>p trace statements</p>
+<p>trace 设置</p>
+<p>regwiz.exe &gt; registration wizard 注册向导</p>
+<p>remrras.exe &gt;</p>
+<p>replace.exe &gt; replace files 用源目录中的同名文件替换目标目录中的文件。</p>
+<p>reset.exe &gt; reset an active section 重置活动部分</p>
+<p>rexec.exe &gt; runs commands on remote hosts running the rexec service. 在运行</p>
+<p>rexec 服务的远程计算机上运行命令。rexec 命令在执行指定命令前，验证远程计算机</p>
+<p>上的用户名，只有安装了 tcp/ip 协议后才可以使用该命令。</p>
+<p>risetup.exe &gt; starts the remote installation service wizard. 运行远程安装向导</p>
+<p>服务</p>
+<p>route.exe &gt; display or edit the current routing tables. 控制网络路由表</p>
+<p>routemon.exe &gt; no longer supported 不再支持了！</p>
+<p>router.exe &gt; router software that runs either on a dedicated dos or on an os</p>
+<p>/2 system. r</p>
+<p>oute软件在 dos或者是os/2系统</p>
+<p>rsh.exe &gt; runs commands on remote hosts running the rsh service 在运行 rsh 服</p>
+<p>务的远程计算机上运行命令</p>
+<p>rsm.exe &gt; mounts and configures remote system media 配置远程系统媒体</p>
+<p>rsnotify.exe &gt; remote storage notification recall 远程存储通知回显</p>
+<p>rsvp.exe &gt; resource reservation protocol 源预约协议</p>
+<p>runas.exe &gt; run a program as another user 允许用户用其他权限运行指定的工具和</p>
+<p>程序</p>
+<p>rundll32.exe &gt; launches a 32-bit dll program 启动32位dll程序</p>
+<p>runonce.exe &gt; causes a program to run during startup 运行程序再开始菜单中</p>
+<p>rwinsta.exe &gt; reset the session subsystem hardware and software to known ini</p>
+<p>tial values 重置会话子系统硬件和软件到最初的值</p>
+<p>savedump.exe &gt; does not write to e:winntuser.dmp 不写入user.dmp中</p>
+<p>scardsvr.exe &gt; smart card resource management server 子能卡资源管理服务器</p>
+<p>schupgr.exe &gt; it will read the schema update files (.ldf files) and upgrade</p>
+<p>the schema. (part of adsi) 读取计划更新文件和更新计划</p>
+<p>secedit.exe &gt; starts security editor help 自动安全性配置管理</p>
+<p>services.exe &gt; controls all the services 控制所有服务</p>
+<p>sethc.exe &gt; set high contrast - changes colours and display mode logoff to s</p>
+<p>et it back to normal 设置高对比</p>
+<p>setreg.exe &gt; shows the software publishing state key values 显示软件发布的国</p>
+<p>家语言</p>
+<p>setup.exe &gt; gui box prompts you to goto control panel to configure system co</p>
+<p>mponents 安装程序（转到控制面板）</p>
+<p>setver.exe &gt; set version for files 设置 ms-dos 子系统向程序报告的 ms-dos 版本</p>
+<p>号</p>
+<p>sfc.exe &gt; system file checker test and check system files for integrity 系统</p>
+<p>文件检查</p>
+<p>sfmprint.exe &gt; print services for macintosh 打印macintosh服务</p>
+<p>sfmpsexe.exe &gt;</p>
+<p>sfmsvc.exe &gt;</p>
+<p>shadow.exe &gt; monitor another terminal services session. 监控另外一台中端服务</p>
+<p>器会话</p>
+<p>share.exe &gt; windows 2000 和 ms-dos 子系统不使用该命令。接受该命令只是为了与</p>
+<p>ms-dos 文件兼容</p>
+<p>shmgrate.exe &gt;</p>
+<p>shrpubw.exe &gt; create and share folders 建立和共享文件夹</p>
+<p>sigverif.exe &gt; file signature verification 文件签名验证</p>
+<p>skeys.exe &gt; serial keys utility 序列号制作工具</p>
+<p>smlogsvc.exe &gt; performance logs and alerts 性能日志和警报</p>
+<p>smss.exe &gt;</p>
+<p>sndrec32.exe &gt; starts the windows sound recorder 录音机</p>
+<p>sndvol32.exe &gt; display the current volume information 显示声音控制信息</p>
+<p>snmp.exe &gt; simple network management protocol used for network mangement 简单</p>
+<p>网络管理协议</p>
+<p>snmptrap.exe &gt; utility used with snmp snmp工具</p>
+<p>sol.exe &gt; windows solitaire game 纸牌</p>
+<p>sort.exe &gt; compares files and folders 读取输入、排序数据并将结果写到屏幕、文</p>
+<p>件和其他设备上</p>
+<p>SPOOLSV.EXE &gt; Part of the spooler service for printing 打印池服务的一部分</p>
+<p>sprestrt.exe &gt;</p>
+<p>srvmgr.exe &gt; Starts the Windows Server Manager 服务器管理器</p>
+<p>stimon.exe &gt; WDM StillImage- &gt; Monitor</p>
+<p>stisvc.exe &gt; WDM StillImage- &gt; Service</p>
+<p>subst.exe &gt; Associates a path with a drive letter 将路径与驱动器盘符关联</p>
+<p>svchost.exe &gt; Svchost.exe is a generic host process name for services that a</p>
+<p>re run from dynamic-link libraries (DLLs). DLL得主进程</p>
+<p>syncapp.exe &gt; Creates Windows Briefcase. 创建Windows文件包</p>
+<p>sysedit.exe &gt; Opens Editor for 4 system files 系统配置编辑器</p>
+<p>syskey.exe &gt; Encrypt and secure system database NT账号数据库按群工具</p>
+<p>sysocmgr.exe &gt; Windows 2000 Setup 2000安装程序</p>
+<p>systray.exe &gt; Starts the systray in the lower right corner. 在低权限运行syst</p>
+<p>ray</p>
+<p>macfile.exe &gt; Used for managing MACFILES 管理MACFILES</p>
+<p>magnify.exe &gt; Used to magnify the current screen 放大镜</p>
+<p>makecab.exe &gt; MS Cabinet Maker 制作CAB文件</p>
+<p>mdm.exe &gt; Machine Debug Manager 机器调试管理</p>
+<p>mem.exe &gt; Display current Memory stats 显示内存状态</p>
+<p>migpwd.exe &gt; Migrate passwords. 迁移密码</p>
+<p>mmc.exe &gt; Microsoft Management Console 控制台</p>
+<p>mnmsrvc.exe &gt; Netmeeting Remote Desktop Sharing NetMeeting远程桌面共享</p>
+<p>mobsync.exe &gt; Manage Synchronization. 同步目录管理器</p>
+<p>mountvol.exe &gt; Creates, deletes, or lists a volume mount point. 创建、删除或</p>
+<p>列出卷的装入点。</p>
+<p>mplay32.exe &gt; MS Media Player 媒体播放器</p>
+<p>mpnotify.exe &gt; Multiple Provider Notification application 多提供者通知应用程</p>
+<p>序</p>
+<p>mq1sync.exe &gt;</p>
+<p>mqbkup.exe &gt; MS Message Queue Backup and Restore Utility 信息队列备份和恢复工</p>
+<p>具</p>
+<p>mqexchng.exe &gt; MSMQ Exchange Connector Setup 信息队列交换连接设置</p>
+<p>mqmig.exe &gt; MSMQ Migration Utility 信息队列迁移工具</p>
+<p>mqsvc.exe &gt; ?</p>
+<p>mrinfo.exe &gt; Multicast routing using SNMP 使用SNMP多点传送路由</p>
+<p>mscdexnt.exe &gt; Installs MSCD (MS CD Extensions) 安装MSCD</p>
+<p>msdtc.exe &gt; Dynamic Transaction Controller Console 动态事务处理控制台</p>
+<p>msg.exe &gt; Send a message to a user local or remote. 发送消息到本地或远程客户</p>
+<p>mshta.exe &gt; HTML Application HOST HTML应用程序主机</p>
+<p>msiexec.exe &gt; Starts Windows Installer Program 开始Windows安装程序</p>
+<p>mspaint.exe &gt; Microsoft Paint 画板</p>
+<p>msswchx.exe &gt;</p>
+<p>mstask.exe &gt; Task Schedule Program 任务计划表程序</p>
+<p>mstinit.exe &gt; Task scheduler setup 任务计划表安装</p>
+<p>narrator.exe &gt; Program will allow you to have a narrator for reading. Micros</p>
+<p>oft讲述人</p>
+<p>nbtstat.exe &gt; Displays protocol stats and current TCP/IP connections using N</p>
+<p>BT 使用 NBT（TCP/IP 上的 NetBIOS）显示协议统计和当前 TCP/IP 连接。</p>
+<p>nddeapir.exe &gt; NDDE API Server side NDDE API服务器端</p>
+<p>net.exe &gt; Net Utility 详细用法看/？</p>
+<p>net1.exe &gt; Net Utility updated version from MS Net的升级版</p>
+<p>netdde.exe &gt; Network DDE will install itself into the background 安装自己到后</p>
+<p>台</p>
+<p>netsh.exe &gt; Creates a shell for network information 用于配置和监控 Windows 2</p>
+<p>000 命令行脚本接口。</p>
+<p>netstat.exe &gt; Displays current connections. 显示协议统计和当前的 TCP/IP 网络</p>
+<p>连接。</p>
+<p>nlsfunc.exe &gt; Loads country-specific information 加载特定国家（地区）的信息。</p>
+<p>Windows 2000 和 MS-DOS 子系统不使用该命令。接受该命令只是为了与 MS-DOS 文件兼</p>
+<p>容。</p>
+<p>notepad.exe &gt; Opens Windows 2000 Notepad 记事本</p>
+<p>nslookup.exe &gt; Displays information for DNS 该诊断工具显示来自域名系统 (DNS)</p>
+<p>名称服务器的信息。</p>
+<p>ntbackup.exe &gt; Opens the NT Backup Utility 备份和故障修复工具</p>
+<p>ntbooks.exe &gt; Starts Windows Help Utility 帮助</p>
+<p>ntdsutil.exe &gt; Performs DB maintenance of the ADSI 完成ADSI的DB的维护</p>
+<p>ntfrs.exe &gt; NT File Replication Service NT文件复制服务</p>
+<p>ntfrsupg.exe &gt;</p>
+<p>ntkrnlpa.exe &gt; Kernel patch 核心补丁</p>
+<p>ntoskrnl.exe &gt; Core NT Kernel KT的核心</p>
+<p>ntsd.exe &gt;</p>
+<p>ntvdm.exe &gt; Simulates a 16-bit Windows environment 模拟16位Windows环境</p>
+<p>nw16.exe &gt; Netware Redirector NetWare转向器</p>
+<p>nw.exe &gt; runs netware s 运行Netware脚本</p>
+<p>odbcad32.exe &gt; ODBC 32-bit Administrator 32位ODBC管理</p>
+<p>odbcconf.exe &gt; Configure ODBC driver”s and data source”s from command line 命</p>
+<p>令行配置ODBC驱动和数据源</p>
+<p>taskman.exe &gt; Task Manager 任务管理器</p>
+<p>taskmgr.exe &gt; Starts the Windows 2000 Task Manager 任务管理器</p>
+<p>tcmsetup.exe &gt; telephony client wizard 电话服务客户安装</p>
+<p>tcpsvcs.exe &gt; TCP Services TCP服务</p>
+<p>.exe &gt; Telnet Utility used to connect to Telnet Server</p>
+<p>termsrv.exe &gt; Terminal Server 终端服务</p>
+<p>tftp.exe &gt; Trivial FTP 将文件传输到正在运行 TFTP 服务的远程计算机或从正在运行</p>
+<p>TFTP 服务的远程计算机传输文件</p>
+<p>tftpd.exe &gt; Trivial FTP Daemon</p>
+<p>themes.exe &gt; Change Windows Themes 桌面主题</p>
+<p>tlntadmn.exe &gt; Telnet Server Administrator Te</p>
+<p>lnet服务管理</p>
+<p>tlntsess.exe &gt; Display the current Telnet Sessions 显示目前的Telnet会话</p>
+<p>tlntsvr.exe &gt; Start the Telnet Server 开始Telnet服务</p>
+<p>tracert.exe &gt; Trace a route to display paths 该诊断实用程序将包含不同生存时间</p>
+<p>(TTL) 值的 Internet 控制消息协议 (ICMP) 回显数据包发送到目标，以决定到达目标</p>
+<p>采用的路由</p>
+<p>tsadmin.exe &gt; Terminal Server Administrator 终端服务管理器</p>
+<p>tscon.exe &gt; Attaches a user session to a terminal session. 粘贴用户会话到终端</p>
+<p>对话</p>
+<p>tsdiscon.exe &gt; Disconnect a user from a terminal session 断开终端服务的用户</p>
+<p>tskill.exe &gt; Kill a Terminal server process 杀掉终端服务</p>
+<p>tsprof.exe &gt; Used with Terminal Server to query results. 用终端服务得出查询结</p>
+<p>果</p>
+<p>tsshutdn.exe &gt; Shutdown the system 关闭系统</p>
+<p>unlodctr.exe &gt; Part of performance monitoring 性能监视器的一部分</p>
+<p>upg351db.exe &gt; Upgrade a jet database 升级Jet数据库</p>
+<p>ups.exe &gt; UPS service UPS服务</p>
+<p>user.exe &gt; Core Windows Service Windows核心服务</p>
+<p>userinit.exe &gt; Part of the winlogon process Winlogon进程的一部分</p>
+<p>usrmgr.exe &gt; Start the windows user manager for domains 域用户管理器</p>
+<p>utilman.exe &gt; This tool enables an administrator to designate which computers automatically open accessibility tools when Windows 2000 starts. 指定2000启动时自动打开那台机器</p>
+<p>verifier.exe &gt; Driver Verifier Manager Driver Verifier Manager</p>
+<p>vwipxspx.exe &gt; Loads IPX/SPX VDM 调用IPX/SPX VDM</p>
+<p>w32tm.exe &gt; Windows Time Server 时间服务器</p>
+<p>wextract.exe &gt; Used to extract windows files 解压缩Windows文件</p>
+<p>winchat.exe &gt; Opens Windows Chat 打开Windows聊天</p>
+<p>winhlp32.exe &gt; Starts the Windows Help System 运行帮助系统</p>
+<p>winlogon.exe &gt; Used as part of the logon process. Logon进程的一部分</p>
+<p>winmine.exe &gt; windows Game 挖地雷</p>
+<p>winmsd.exe &gt; Windows Diagnostic utility 系统信息</p>
+<p>wins.exe &gt; Wins Service Wins服务</p>
+<p>winspool.exe &gt; Print Routing 打印路由</p>
+<p>winver.exe &gt; Displays the current version of Windows 显示Windows版本</p>
+<p>wizmgr.exe &gt; Starts Windows Administration Wizards Windows管理向导</p>
+<p>wjview.exe &gt; Command line loader for Java 命令行调用Java</p>
+<p>wowdeb.exe &gt; . For starters, the 32-bit APIs require that the WOWDEB.EXE tas</p>
+<p>k runs in the target debugee”s VM 启动时，32位API需要</p>
+<p>wowexec.exe &gt; For running Windows over Windows Applications 在Windows应用程序</p>
+<p>上运行Windows</p>
+<p>wpnpinst.exe &gt; ?</p>
+<p>write.exe &gt; Starts MS Write Program 写字板</p>
+<p>w.exe &gt; Windows ing Utility 脚本工具</p>
+<p>wupdmgr.exe &gt; Starts the Windows update</p>
+<p>Wizard (Internet) 运行Windows升级向导</p>
+<p>xcopy.exe &gt; 复制文件和目录，包括子目录</p>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2020/04/10/%E5%9C%B0%E7%90%83/">地球</a><a class="next" href="/2020/04/01/win10%E5%BF%AB%E6%8D%B7%E9%94%AE/">win10快捷键</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://yoursite.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BD%B1%E8%A7%86%E8%A7%82%E7%9C%8B/">影视观看</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86/">知识</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://earth.google.com/web/" title="谷歌地球" target="_blank">谷歌地球</a><ul></ul><a href="https://colorhub.me/" title="图片" target="_blank">图片</a><ul></ul><a href="https://wanneng.run/cn/" title="万能命令" target="_blank">万能命令</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/love.js"></script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
